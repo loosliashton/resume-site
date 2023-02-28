@@ -19,6 +19,9 @@ function App() {
             <a href="https://bit.ly/AshtonLoosliResume" title="Resume">
               <BsFileEarmarkPersonFill />
             </a>
+            <a href="mailto:loosliashton@gmail.com" title="Email">
+              <BsEnvelopeFill />
+            </a>
             <a href="https://www.linkedin.com/in/ashtonloosli/" title="LinkedIn">
               <BsLinkedin />
             </a>
@@ -27,9 +30,6 @@ function App() {
             </a>
             <a href="https://www.youtube.com/ashtonloosli" title="YouTube">
               <BsYoutube />
-            </a>
-            <a href="mailto:loosliashton@gmail.com" title="Email">
-              <BsEnvelopeFill />
             </a>
           </IconContext.Provider>
         </div>
