@@ -23,3 +23,10 @@
   justify-content: space-between;
   width: 220px;
 }
+
+.headshot {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}

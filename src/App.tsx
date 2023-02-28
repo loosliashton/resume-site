@@ -1,5 +1,6 @@
 import React from "react";
 import { IconContext } from "react-icons";
+import headshot from "./images/headshot.jpg"
 import {
   BsEnvelopeFill,
   BsFileEarmarkPersonFill,
@@ -10,10 +11,17 @@ import {
 import "./App.css";
 
 function App() {
+  const [pictureVisible, setPictureVisible] = React.useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
-        <p className="name">Ashton Loosli</p>
+        <p className="name" onClick={() => setPictureVisible(!pictureVisible)}>
+          Ashton Loosli
+        </p>
+        {pictureVisible && (
+          <img src={headshot} alt="Ashton Loosli" className="headshot" />
+        )}
         <div className="links">
           <IconContext.Provider value={{ size: "24px", color: "#363636" }}>
             <a href="https://bit.ly/AshtonLoosliResume" title="Resume">
@@ -22,7 +30,10 @@ function App() {
             <a href="mailto:loosliashton@gmail.com" title="Email">
               <BsEnvelopeFill />
             </a>
-            <a href="https://www.linkedin.com/in/ashtonloosli/" title="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/ashtonloosli/"
+              title="LinkedIn"
+            >
               <BsLinkedin />
             </a>
             <a href="https://github.com/loosliashton" title="GitHub">
