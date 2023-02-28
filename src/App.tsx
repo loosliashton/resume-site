@@ -9,6 +9,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import "./App.css";
+import { isMobile } from "react-device-detect";
 
 function App() {
   const [pictureVisible, setPictureVisible] = React.useState(false);
@@ -16,13 +17,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div onClick={() => setPictureVisible(!pictureVisible)} className="pictureDiv">
-          <p className="name">Ashton Loosli</p>
-          {pictureVisible && (
-            <img src={headshot} alt="Ashton Loosli" className="headshot" />
-          )}
+        <div onClick={() => setPictureVisible(!pictureVisible)} className={isMobile ? "" : "pictureDiv"}>
+          <p className={pictureVisible ? "name show-picture" : "name"}>Ashton Loosli</p>
+          <img src={headshot} alt="Ashton Loosli" className={pictureVisible ? "headshot show-picture" : "headshot"} />
+          {/* {pictureVisible && (
+          )} */}
         </div>
-        <div className="links">
+        <div className={pictureVisible ? "links show-picture" : "links"}>
           <IconContext.Provider value={{ size: "24px", color: "#363636" }}>
             <a href="https://bit.ly/AshtonLoosliResume" title="Resume">
               <BsFileEarmarkPersonFill />

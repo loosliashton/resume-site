@@ -16,12 +16,26 @@
   font-weight: 600;
   color: #363636;
   font-family: monospace;
+  transform: translateY(200px);
+  transition: transform 0.5s ease;
+}
+
+.name.show-picture {
+  transform: translateY(0);
+  transition: transform 0.5s ease;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
   width: 220px;
+  transform: translateY(-150px);
+  transition: transform 0.5s ease;
+}
+
+.links.show-picture {
+  transform: translateY(0);
+  transition: transform 0.5s ease;
 }
 
 .headshot {
@@ -29,6 +43,14 @@
   height: 300px;
   border-radius: 50%;
   margin-bottom: 50px;
+  transform: scale(50%);
+  transition: opacity 0.3s ease, transform 0.5s ease;
+  opacity: 0;
+}
+
+.headshot.show-picture {
+  opacity: 1;
+  transform: scale(100%);
 }
 
 .pictureDiv {
