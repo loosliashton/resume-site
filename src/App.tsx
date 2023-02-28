@@ -1,6 +1,6 @@
 import React from "react";
 import { IconContext } from "react-icons";
-import headshot from "./images/headshot.jpg"
+import headshot from "./images/headshot.jpg";
 import {
   BsEnvelopeFill,
   BsFileEarmarkPersonFill,
@@ -16,12 +16,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="name" onClick={() => setPictureVisible(!pictureVisible)}>
-          Ashton Loosli
-        </p>
-        {pictureVisible && (
-          <img src={headshot} alt="Ashton Loosli" className="headshot" />
-        )}
+        <div onClick={() => setPictureVisible(!pictureVisible)} className="pictureDiv">
+          <p className="name">Ashton Loosli</p>
+          {pictureVisible && (
+            <img src={headshot} alt="Ashton Loosli" className="headshot" />
+          )}
+        </div>
         <div className="links">
           <IconContext.Provider value={{ size: "24px", color: "#363636" }}>
             <a href="https://bit.ly/AshtonLoosliResume" title="Resume">
