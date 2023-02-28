@@ -20,8 +20,6 @@ function App() {
         <div onClick={() => setPictureVisible(!pictureVisible)} className={isMobile ? "" : "pictureDiv"}>
           <p className={pictureVisible ? "name show-picture" : "name"}>Ashton Loosli</p>
           <img src={headshot} alt="Ashton Loosli" className={pictureVisible ? "headshot show-picture" : "headshot"} />
-          {/* {pictureVisible && (
-          )} */}
         </div>
         <div className={pictureVisible ? "links show-picture" : "links"}>
           <IconContext.Provider value={{ size: "24px", color: "#363636" }}>

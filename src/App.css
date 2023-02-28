@@ -16,7 +16,7 @@
   font-weight: 600;
   color: #363636;
   font-family: monospace;
-  transform: translateY(200px);
+  transform: translateY(150px);
   transition: transform 0.5s ease;
 }
 
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   width: 220px;
-  transform: translateY(-150px);
+  transform: translateY(-200px);
   transition: transform 0.5s ease;
 }
 
