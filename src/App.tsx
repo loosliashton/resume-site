@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import { IconContext } from "react-icons";
 import headshot from "./images/headshot.jpg";
 import {
   BsEnvelopeFill,
   BsFileEarmarkPersonFill,
+  BsFillArrowDownCircleFill,
   BsGithub,
   BsLinkedin,
   BsYoutube,
@@ -13,13 +14,25 @@ import { isMobile } from "react-device-detect";
 
 function App() {
   const [pictureVisible, setPictureVisible] = React.useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const executeScroll = () => scrollRef.current?.scrollIntoView();
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div onClick={() => setPictureVisible(!pictureVisible)} className={isMobile ? "" : "pictureDiv"}>
-          <p className={pictureVisible ? "name show-picture" : "name"}>Ashton Loosli</p>
-          <img src={headshot} alt="Ashton Loosli" className={pictureVisible ? "headshot show-picture" : "headshot"} />
+      <div className="App-header">
+        <div
+          onClick={() => setPictureVisible(!pictureVisible)}
+          className={isMobile ? "" : "pictureDiv"}
+        >
+          <p className={pictureVisible ? "name show-picture" : "name"}>
+            Ashton Loosli
+          </p>
+          <img
+            src={headshot}
+            alt="Ashton Loosli"
+            className={pictureVisible ? "headshot show-picture" : "headshot"}
+          />
         </div>
         <div className={pictureVisible ? "links show-picture" : "links"}>
           <IconContext.Provider value={{ size: "24px", color: "#363636" }}>
@@ -43,7 +56,15 @@ function App() {
             </a>
           </IconContext.Provider>
         </div>
-      </header>
+        <div onClick={executeScroll} className="scrollButton">
+          <a href="#resume">
+            <BsFillArrowDownCircleFill color="#363636" size={"24px"}/>
+          </a>
+        </div>
+      </div>
+      <div className="resume" ref={scrollRef}>
+        <h1>Test</h1>
+      </div>
     </div>
   );
 }

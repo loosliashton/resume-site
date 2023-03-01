@@ -56,3 +56,17 @@
 .pictureDiv {
   cursor: pointer;
 }
+
+.scrollButton {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.resume {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
