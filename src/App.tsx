@@ -3,7 +3,6 @@ import { IconContext } from "react-icons";
 import headshot from "./images/headshot.jpg";
 import {
   BsEnvelopeFill,
-  BsFileEarmarkPersonFill,
   BsFillArrowDownCircleFill,
   BsGithub,
   BsLinkedin,
@@ -36,10 +35,7 @@ function App() {
           />
         </div>
         <div className={pictureVisible ? "links show-picture" : "links"}>
-          <IconContext.Provider value={{ size: "24px", color: "#363636" }}>
-            <a href="https://bit.ly/AshtonLoosliResume" title="Resume">
-              <BsFileEarmarkPersonFill />
-            </a>
+          <IconContext.Provider value={{ size: "24px", color: "#555555" }}>
             <a href="mailto:loosliashton@gmail.com" title="Email">
               <BsEnvelopeFill />
             </a>
@@ -59,7 +55,7 @@ function App() {
         </div>
         <div onClick={executeScroll} className="scrollButton">
           <a href="#resume">
-            <BsFillArrowDownCircleFill color="#363636" size={"24px"}/>
+            <BsFillArrowDownCircleFill color="white" size={"24px"}/>
           </a>
         </div>
       </div>
