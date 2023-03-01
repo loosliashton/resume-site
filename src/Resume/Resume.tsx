@@ -1,4 +1,5 @@
-import { Accordion } from "react-bootstrap";
+import { Accordion, AccordionDetails } from "@mui/material";
+import AccordionSummary from "@mui/material/AccordionSummary";
 import "./Resume.css";
 
 export function Resume() {
@@ -9,13 +10,18 @@ export function Resume() {
       <h1>Education</h1>
       <div>
         <Accordion>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>University of Utah</Accordion.Header>
+          <AccordionSummary>
+            <h2>University of Utah</h2>
+          </AccordionSummary>
+        </Accordion>
+        {/* <Accordion alwaysOpen>
+          <Accordion.Item eventKey="Education">
+            <Accordion.Header className="accordionHeader">University of Utah</Accordion.Header>
             <Accordion.Body>
               <p>Minor in Business, 3.7 GPA, Dean’s List (7 Semesters)</p>
             </Accordion.Body>
           </Accordion.Item>
-        </Accordion>
+        </Accordion> */}
       </div>
     </div>
   );
