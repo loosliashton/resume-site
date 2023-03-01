@@ -11,6 +11,7 @@ import {
 } from "react-icons/bs";
 import "./App.css";
 import { isMobile } from "react-device-detect";
+import { Resume } from "./Resume/Resume";
 
 function App() {
   const [pictureVisible, setPictureVisible] = React.useState(false);
@@ -63,7 +64,7 @@ function App() {
         </div>
       </div>
       <div className="resume" ref={scrollRef}>
-        <h1>Test</h1>
+        <Resume />
       </div>
     </div>
   );
