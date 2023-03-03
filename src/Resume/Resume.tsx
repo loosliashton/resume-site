@@ -20,7 +20,9 @@ export function Resume() {
       <h1>Education</h1>
       <div>
         <div className="accordionTitle" onClick={() => setUtah(!utah)}>
-          <h2><b>University of Utah</b></h2>
+          <h2>
+            <b>University of Utah</b>
+          </h2>
           <div className="expandIcon">{utah ? "-" : "+"}</div>
         </div>
         {utah && (
@@ -85,7 +87,7 @@ export function Resume() {
             <ul>
               <li>
                 Studied essential algorithms and data structures to help
-                students complete assignments and exams.
+                students complete assignments and exams using Java, C#, and C.
               </li>
               <li>
                 Designed and ran instructional labs to supplement student
@@ -96,7 +98,9 @@ export function Resume() {
           </div>
         )}
         <div className="accordionTitle" onClick={() => setFidelity(!fidelity)}>
-          <h2><b>Software Developer Intern</b> / Fidelity Investments</h2>
+          <h2>
+            <b>Software Developer Intern</b> / Fidelity Investments
+          </h2>
           <div className="expandIcon">{fidelity ? "-" : "+"}</div>
         </div>
         {fidelity && (
@@ -121,7 +125,9 @@ export function Resume() {
           </div>
         )}
         <div className="accordionTitle" onClick={() => setAlegra(!alegra)}>
-          <h2><b>Master of Releases</b> / Alegra Learning</h2>
+          <h2>
+            <b>Master of Releases</b> / Alegra Learning
+          </h2>
           <div className="expandIcon">{alegra ? "-" : "+"}</div>
         </div>
         {alegra && (
