@@ -55,7 +55,7 @@ function App() {
         </div>
         <div onClick={executeScroll} className="scrollButton">
           <a href="#resume">
-            <BsFillArrowDownCircleFill color="white" size={"24px"}/>
+            <BsFillArrowDownCircleFill color="white" size={"24px"} />
           </a>
         </div>
       </div>
