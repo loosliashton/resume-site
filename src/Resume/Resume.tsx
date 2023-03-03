@@ -20,7 +20,7 @@ export function Resume() {
       <h1>Education</h1>
       <div>
         <div className="accordionTitle" onClick={() => setUtah(!utah)}>
-          <h2>University of Utah</h2>
+          <h2><b>University of Utah</b></h2>
           <div className="expandIcon">{utah ? "-" : "+"}</div>
         </div>
         {utah && (
@@ -73,7 +73,10 @@ export function Resume() {
       <h1>Experience</h1>
       <div>
         <div className="accordionTitle" onClick={() => setTa(!ta)}>
-          <h2>Teaching Assistant / University of Utah</h2>
+          <h2>
+            <b>Teaching Assistant</b> / University of Utah
+          </h2>
+          {/* <h3>University of Utah</h3> */}
           <div className="expandIcon">{ta ? "-" : "+"}</div>
         </div>
         {ta && (
@@ -93,7 +96,7 @@ export function Resume() {
           </div>
         )}
         <div className="accordionTitle" onClick={() => setFidelity(!fidelity)}>
-          <h2>Software Developer Intern / Fidelity Investments</h2>
+          <h2><b>Software Developer Intern</b> / Fidelity Investments</h2>
           <div className="expandIcon">{fidelity ? "-" : "+"}</div>
         </div>
         {fidelity && (
@@ -118,7 +121,7 @@ export function Resume() {
           </div>
         )}
         <div className="accordionTitle" onClick={() => setAlegra(!alegra)}>
-          <h2>Master of Releases / Alegra Learning</h2>
+          <h2><b>Master of Releases</b> / Alegra Learning</h2>
           <div className="expandIcon">{alegra ? "-" : "+"}</div>
         </div>
         {alegra && (
@@ -165,8 +168,12 @@ export function Resume() {
           <li>Amateur filmmaker and photographer.</li>
         </ul>
       </div>
-      <a href="https://bit.ly/AshtonLoosliResume" title="Resume" style={{marginBottom: "10px"}}>
-        <BsFillFileEarmarkPdfFill color="white" size={30}/>
+      <a
+        href="https://bit.ly/AshtonLoosliResume"
+        title="Resume"
+        style={{ marginBottom: "10px" }}
+      >
+        <BsFillFileEarmarkPdfFill color="rgb(0, 167, 167)" size={30} />
       </a>
     </div>
   );

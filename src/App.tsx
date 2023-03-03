@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { IconContext } from "react-icons";
 import headshot from "./images/headshot.jpg";
 import {
@@ -10,16 +10,33 @@ import {
 } from "react-icons/bs";
 import "./App.css";
 import { isMobile } from "react-device-detect";
+import chroma from "chroma-js";
 import { Resume } from "./Resume/Resume";
 
 function App() {
   const [pictureVisible, setPictureVisible] = React.useState(false);
+  const [scrollPosition, setScrollPosition] = React.useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  })
+
   const executeScroll = () => scrollRef.current?.scrollIntoView();
+  const scale = chroma.scale(["black", "white"]);
+  const backgroundColor = scale(scrollPosition / 800).hex();
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: backgroundColor}}>
       <div className="App-header">
         <div
           onClick={() => setPictureVisible(!pictureVisible)}
@@ -35,7 +52,7 @@ function App() {
           />
         </div>
         <div className={pictureVisible ? "links show-picture" : "links"}>
-          <IconContext.Provider value={{ size: "24px", color: "#555555" }}>
+          <IconContext.Provider value={{ size: "24px", color: "teal" }}>
             <a href="mailto:loosliashton@gmail.com" title="Email">
               <BsEnvelopeFill />
             </a>
