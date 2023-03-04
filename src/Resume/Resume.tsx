@@ -159,7 +159,7 @@ export function Resume() {
             experience with Python, Kotlin, HTML/CSS, Docker, Firebase, and AWS.
           </li>
           <li>
-            Adept at picking up new skills due to extensive self- taught
+            Adept at picking up new skills due to extensive self-taught
             experience with React Native, Angular, MAUI, and other software
             development frameworks.
           </li>
