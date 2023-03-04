@@ -35,11 +35,11 @@ export function Resume() {
             <h3>Relevant Coursework</h3>
             <ul>
               <li>
-                <b>Mobile App Development:</b> created an Android app in Kotlin,
+                <b>Mobile App Development:</b> Created an Android app in Kotlin,
                 utilizing system sensors and external APIs.
               </li>
               <li>
-                <b>Web Software Architecture:</b> used ASP.NET to create a web
+                <b>Web Software Architecture:</b> Utilized ASP.NET to create a web
                 app with a database hosted on AWS EC2. Learned about and
                 implemented user roles, REST, JavaScript/HTML5, CSS, Selenium,
                 encryption, Google analytics, Bootstrap, and XML/JSON
