@@ -12,10 +12,10 @@ export function Resume() {
     <div className="resume">
       <div className="headerText">Resume</div>
       <p>
-        I'm a 23-year-old college student at the University of Utah. I am
-        currently working toward a BS in Computer Science with a minor in
-        Business. My hobbies include fitness, motorcycles, photography, video
-        production, mountain biking, basketball, and technology.
+        I'm a 24-year-old University of Utah graduate with a BS in Computer
+        Science and a minor in Business. My hobbies include fitness,
+        motorcycles, photography, video production, mountain biking, basketball,
+        and technology.
       </p>
       <h1>Education</h1>
       <div>
