@@ -14,8 +14,8 @@ export function Resume() {
       <p>
         I'm a 23-year-old college student at the University of Utah. I am
         currently working toward a BS in Computer Science with a minor in
-        Business. My hobbies include motorcycles, photography, video production,
-        mountain biking, basketball, and all things tech.
+        Business. My hobbies include fitness, motorcycles, photography, video
+        production, mountain biking, basketball, and technology.
       </p>
       <h1>Education</h1>
       <div>
@@ -39,8 +39,8 @@ export function Resume() {
                 utilizing system sensors and external APIs.
               </li>
               <li>
-                <b>Web Software Architecture:</b> Utilized ASP.NET to create a web
-                app with a database hosted on AWS EC2. Learned about and
+                <b>Web Software Architecture:</b> Utilized ASP.NET to create a
+                web app with a database hosted on AWS EC2. Learned about and
                 implemented user roles, REST, JavaScript/HTML5, CSS, Selenium,
                 encryption, Google analytics, Bootstrap, and XML/JSON
                 processing.

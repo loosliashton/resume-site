@@ -4,6 +4,7 @@ import headshot from "./images/headshot.jpg";
 import {
   BsEnvelopeFill,
   BsFillArrowDownCircleFill,
+  BsFillGiftFill,
   BsGithub,
   BsLinkedin,
   BsYoutube,
@@ -29,14 +30,14 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  })
+  });
 
   const executeScroll = () => scrollRef.current?.scrollIntoView();
   const scale = chroma.scale(["black", "white"]);
   const backgroundColor = scale(scrollPosition / 800).hex();
 
   return (
-    <div className="App" style={{backgroundColor: backgroundColor}}>
+    <div className="App" style={{ backgroundColor: backgroundColor }}>
       <div className="App-header">
         <div
           onClick={() => setPictureVisible(!pictureVisible)}
@@ -67,6 +68,9 @@ function App() {
             </a>
             <a href="https://www.youtube.com/ashtonloosli" title="YouTube">
               <BsYoutube />
+            </a>
+            <a href="https://lists.ashtonloosli.com" title="Lists">
+              <BsFillGiftFill />
             </a>
           </IconContext.Provider>
         </div>

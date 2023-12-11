@@ -12,6 +12,7 @@
 }
 
 .name {
+  text-align: center;
   font-size: 3em;
   font-weight: 600;
   color: #eacbb6;
