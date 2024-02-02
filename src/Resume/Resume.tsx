@@ -175,7 +175,7 @@ export function Resume() {
         </ul>
       </div>
       <a
-        href="https://bit.ly/AshtonLoosliResume"
+        href="https://aloos.li/resume"
         title="Resume"
         style={{ marginBottom: "10px" }}
       >
