@@ -12,7 +12,10 @@ import {
 import "./App.css";
 import { isMobile } from "react-device-detect";
 import chroma from "chroma-js";
-import { Resume } from "./Resume/Resume";
+import { Resume as ResumeComponent } from "./Resume/Resume";
+
+// Memoize the component to prevent re-renders
+const Resume = React.memo(ResumeComponent);
 
 function App() {
   const [pictureVisible, setPictureVisible] = React.useState(false);

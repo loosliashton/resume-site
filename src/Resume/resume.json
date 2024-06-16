@@ -1,0 +1,106 @@
+{
+  "description": "I'm a 24-year-old University of Utah graduate with a BS in Computer Science and a minor in Business. My hobbies include fitness, motorcycles, photography, video production, mountain biking, basketball, and technology.",
+  "education": [
+    {
+      "school": "University of Utah",
+      "time": "August 2018 - May 2023",
+      "degree": "Bachelor of Science in Computer Science",
+      "info": "Minor in Business, 3.7 GPA, Dean's List (7 Semesters), Honors Certificate",
+      "coursework": [
+        {
+          "name": "Mobile App Development",
+          "description": "Created an Android app in Kotlin, utilizing system sensors and external APIs."
+        },
+        {
+          "name": "Web Software Architecture",
+          "description": "Utilized ASP.NET to create a web app with a database hosted on AWS EC2. Learned about and implemented user roles, REST, JavaScript/HTML5, CSS, Selenium, encryption, Google analytics, Bootstrap, and XML/JSON processing."
+        },
+        {
+          "name": "Artificial Intelligence",
+          "description": "Implemented intelligent computer systems through a series of Python projects."
+        },
+        {
+          "name": "Computer Graphics",
+          "description": "Designed software to represent curves and surfaces using the GPU pipeline. Developed WebGL applications to display and manipulate 2D and 3D models on the web."
+        },
+        {
+          "name": "Programming Languages",
+          "description": "Learned functional programming techniques by creating a series of interpreters, type-checkers, and compilers."
+        },
+        {
+          "name": "Databases",
+          "description": "Created a database system using MySQL, including ER diagrams and front-end access tools."
+        },
+        {
+          "name": "Capstone",
+          "description": "Developed a React Native mobile application using a Firebase backend as a final project."
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "name": "Software Developer",
+      "company": "Systems Implementers, Inc.",
+      "time": "March 2023 - Present",
+      "bullets": [
+        "Collaborated with a team of 6-8 developers to enhance and maintain a large existing codebase of aircraft maintenance software, featuring an Angular frontend, a Java Spring backend, and an Oracle SQL database.",
+        "Created new reports and implemented major changes and fixes to existing ones, ensuring productivity and accuracy for hundreds of users across Hill Air Force Base who rely on these reports for critical operations.",
+        "Worked closely with cross-functional teams in an Agile environment to ensure timely and high-quality releases.",
+        "Analyzed user requirements and translated them into technical specifications and robust software solutions.",
+        "Performed manual updates and modifications to database tables to correct issues, implement changes, and ensure data integrity.",
+        "Promoted best practices and improved team productivity by playing a key role in the transition to Agile methodologies, becoming a certified Agile Scrum Master.",
+        "Achieved high productivity within the first few months by rapidly adapting to the existing codebase and consistently delivering high-quality code and features."
+      ]
+    },
+    {
+      "name": "Teaching Assistant",
+      "company": "University of Utah",
+      "time": "January 2022 - May 2023",
+      "bullets": [
+        "Assisted students with assignments and exams in Java, C#, and C, focusing on essential algorithms, data structures, version control, IDEs, and programming fundamentals.",
+        "Designed and conducted instructional labs to supplement student learning for Algorithms & Data Structures, Software Practice, and Foundations of Computer Science courses."
+      ]
+    },
+    {
+      "name": "Software Developer Intern",
+      "company": "Fidelity Investments",
+      "time": "Summer 2021 & 2022",
+      "bullets": [
+        "Practiced Agile software development in a team environment, including daily standup meetings, extensive use of Git, and task management within sprints.",
+        "Designed and implemented a backend trade flow dashboard using Angular, deployed as a web application using Docker and AWS.",
+        "Worked extensively with TypeScript and implemented changes regarding Datadog logging and tracing, ESLint warnings and errors, and Jenkins build configurations."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "description": "Java, C/C++, JavaScript/TypeScript, HTML/CSS, C#, SQL. Some experience in Python, Kotlin, Go."
+    },
+    {
+      "name": "Tools & Technologies",
+      "description": "Git, AWS, Firebase, Google Cloud, Jira, Visual Studio, VS Code, Eclipse."
+    },
+    {
+      "name": "Frameworks",
+      "description": "React, React Native, Angular, Spring."
+    },
+    {
+      "name": "Certifications",
+      "description": "Agile Scrum Master."
+    },
+    {
+      "name": "Operating Systems",
+      "description": "Windows, macOS, Linux."
+    },
+    {
+      "name": "Creative Software",
+      "description": "Adobe Illustrator, Photoshop, Lightroom, Premiere."
+    },
+    {
+      "name": "Additional Interests",
+      "description": "Amateur filmmaker and photographer."
+    }
+  ]
+}
