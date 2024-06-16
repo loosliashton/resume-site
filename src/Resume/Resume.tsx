@@ -57,6 +57,16 @@ export function Resume() {
           </div>
         ))}
       </div>
+      <h1>Skills</h1>
+      <div>
+        <ul>
+          {resumeData.skills.map((skill, index) => (
+            <li key={index}>
+              <b>{skill.name}</b>: {skill.description}
+            </li>
+          ))}
+        </ul>
+      </div>
       <h1>Education</h1>
       <div>
         {resumeData.education.map((edu, index) => (
@@ -89,16 +99,6 @@ export function Resume() {
             )}
           </div>
         ))}
-      </div>
-      <h1>Skills</h1>
-      <div>
-        <ul>
-          {resumeData.skills.map((skill, index) => (
-            <li key={index}>
-              <b>{skill.name}</b>: {skill.description}
-            </li>
-          ))}
-        </ul>
       </div>
       <a
         href="https://aloos.li/resume"

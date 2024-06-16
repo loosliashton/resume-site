@@ -48,9 +48,9 @@
         "Created new reports and implemented major changes and fixes to existing ones, ensuring productivity and accuracy for hundreds of users across Hill Air Force Base who rely on these reports for critical operations.",
         "Worked closely with cross-functional teams in an Agile environment to ensure timely and high-quality releases.",
         "Analyzed user requirements and translated them into technical specifications and robust software solutions.",
-        "Performed manual updates and modifications to database tables to correct issues, implement changes, and ensure data integrity.",
+        "Performed manual updates and modifications to database tables to correct issues, implement changes, and ensure data integrity; performed query optimization and table indexing to improve performance.",
         "Promoted best practices and improved team productivity by playing a key role in the transition to Agile methodologies, becoming a certified Agile Scrum Master.",
-        "Achieved high productivity within the first few months by rapidly adapting to the existing codebase and consistently delivering high-quality code and features."
+        "Achieved among the highest production throughput on the team within 6 months by rapidly adapting to the existing codebase and consistently delivering high-quality code and features."
       ]
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "name": "Tools & Technologies",
-      "description": "Git, AWS, Firebase, Google Cloud, Jira, Visual Studio, VS Code, Eclipse."
+      "description": "Git, AWS, Firebase, Google Cloud, Jira, Docker, Kubernetes."
     },
     {
       "name": "Frameworks",
