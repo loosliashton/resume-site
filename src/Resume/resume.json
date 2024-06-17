@@ -46,7 +46,7 @@
       "bullets": [
         "Collaborated with a team of 6-8 developers to enhance and maintain a large existing codebase of aircraft maintenance software, featuring an Angular frontend, a Java Spring backend, and an Oracle SQL database.",
         "Created new reports and implemented major changes and fixes to existing ones, ensuring productivity and accuracy for hundreds of users across Hill Air Force Base who rely on these reports for critical operations.",
-        "Worked closely with cross-functional teams in an Agile environment to ensure timely and high-quality releases.",
+        "Led the ongoing conversion of 100+ reports from JSF to Angular frameworks, resulting in a 50% improvement in page load times, enhanced user experience, and a more maintainable and scalable codebase.",
         "Analyzed user requirements and translated them into technical specifications and robust software solutions.",
         "Performed manual updates and modifications to database tables to correct issues, implement changes, and ensure data integrity; performed query optimization and table indexing to improve performance.",
         "Promoted best practices and improved team productivity by playing a key role in the transition to Agile methodologies, becoming a certified Agile Scrum Master.",
