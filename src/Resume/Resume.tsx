@@ -57,6 +57,16 @@ export function Resume() {
           </div>
         ))}
       </div>
+      <h1>Projects</h1>
+      <div>
+        <ul>
+          {resumeData.projects.map((project, index) => (
+            <li key={index}>
+              <b>{project.name}</b>: {project.description}
+            </li>
+          ))}
+        </ul>
+      </div>
       <h1>Skills</h1>
       <div>
         <ul>

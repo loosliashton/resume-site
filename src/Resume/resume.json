@@ -45,12 +45,22 @@
       "time": "March 2023 - Present",
       "bullets": [
         "Collaborated with a team of 6-8 developers to enhance and maintain a large existing codebase of aircraft maintenance software, featuring an Angular frontend, a Java Spring backend, and an Oracle SQL database.",
-        "Created new reports and implemented major changes and fixes to existing ones, ensuring productivity and accuracy for hundreds of users across Hill Air Force Base who rely on these reports for critical operations.",
-        "Led the ongoing conversion of 100+ reports from JSF to Angular frameworks, resulting in a 50% improvement in page load times, enhanced user experience, and a more maintainable and scalable codebase.",
+        "Created new reports and implemented major changes and fixes to existing ones, ensuring productivity and accuracy for thousands of users across Hill Air Force Base who rely on these reports daily for critical operations.",
+        "Led the ongoing conversion of 100+ pages from JSF to Angular frameworks, resulting in a 50% improvement in load times, enhanced user experience, and a significant decrease in development time for bug fixes and enhancements.",
         "Analyzed user requirements and translated them into technical specifications and robust software solutions.",
-        "Performed manual updates and modifications to database tables to correct issues, implement changes, and ensure data integrity; performed query optimization and table indexing to improve performance.",
-        "Promoted best practices and improved team productivity by playing a key role in the transition to Agile methodologies, becoming a certified Agile Scrum Master.",
+        "Performed manual updates and modifications to database tables to correct issues, implement changes, and ensure data integrity; performed query optimization and table indexing to improve performance by up to 200%.",
+        "Drove Agile transformation, including backlog refinement, user story creation, and Kanban implementation, achieving a 30% increase in team output and becoming a certified Scrum Master.",
         "Achieved among the highest production throughput on the team within 6 months by rapidly adapting to the existing codebase and consistently delivering high-quality code and features."
+      ]
+    },
+    {
+      "name": "Software Developer Intern",
+      "company": "Fidelity Investments",
+      "time": "Summer 2021 & 2022",
+      "bullets": [
+        "Improved team workflow by decreasing build time by 20%, eliminating verbose logging data, and re-configuring the linter to promote TypeScript best practices.",
+        "Worked comprehensively with TypeScript and implemented changes regarding Datadog logging and tracing, ESLint warnings and errors, and Jenkins build configurations.",
+        "Practiced Agile software development in a team environment, including daily standup meetings, extensive use of Git version control, and task management within sprints."
       ]
     },
     {
@@ -61,34 +71,38 @@
         "Assisted students with assignments and exams in Java, C#, and C, focusing on essential algorithms, data structures, version control, IDEs, and programming fundamentals.",
         "Designed and conducted instructional labs to supplement student learning for Algorithms & Data Structures, Software Practice, and Foundations of Computer Science courses."
       ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Fast Break",
+      "description": "Developed a React Native mobile applications in a team of four to facilitate pickup basketball. Features multi-provider authentication, location-based notifications, Firebase NoSQL back-end, peer-to-peer messaging, and cross-platform compatibility."
     },
     {
-      "name": "Software Developer Intern",
-      "company": "Fidelity Investments",
-      "time": "Summer 2021 & 2022",
-      "bullets": [
-        "Practiced Agile software development in a team environment, including daily standup meetings, extensive use of Git, and task management within sprints.",
-        "Designed and implemented a backend trade flow dashboard using Angular, deployed as a web application using Docker and AWS.",
-        "Worked extensively with TypeScript and implemented changes regarding Datadog logging and tracing, ESLint warnings and errors, and Jenkins build configurations."
-      ]
+      "name": "Trade Flow Dashboard",
+      "description": "Worked with a team of five developers to create an internal dashboard for Fidelity Investments. Developed in Angular and deployed via a Docker container on AWS, this dashboard provides a way for brokers to track where in the pipeline any trade is."
+    },
+    {
+      "name": "Gift Lists",
+      "description": "Built a web app in Angular to allow for the creation and sharing of gift wish lists. Features include creating a shareable link through a cloud function call to a homemade URL shortener and AI-powered gift suggestions."
     }
   ],
   "skills": [
     {
-      "name": "Programming Languages",
-      "description": "Java, C/C++, JavaScript/TypeScript, HTML/CSS, C#, SQL. Some experience in Python, Kotlin, Go."
+      "name": "Languages",
+      "description": "Java, JavaScript, TypeScript, C#, C, C++, HTML, CSS, SQL, Python, Kotlin, Go."
     },
     {
-      "name": "Tools & Technologies",
-      "description": "Git, AWS, Firebase, Google Cloud, Jira, Docker, Kubernetes."
+      "name": "Technologies",
+      "description": "Git, AWS, Azure, Google Cloud, Firebase, Jira, Docker, Kubernetes, MongoDB."
     },
     {
       "name": "Frameworks",
-      "description": "React, React Native, Angular, Spring."
+      "description": "React, React Native, Angular, Vue.js, .NET, Spring."
     },
     {
       "name": "Certifications",
-      "description": "Agile Scrum Master."
+      "description": "Agile Scrum Master (Scrum Alliance)."
     },
     {
       "name": "Operating Systems",
