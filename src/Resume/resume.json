@@ -84,7 +84,7 @@
     },
     {
       "name": "Gift Lists",
-      "description": "Built a web app in Angular to allow for the creation and sharing of gift wish lists. Features include creating a shareable link through a cloud function call to a homemade URL shortener and AI-powered gift suggestions."
+      "description": "Built a web app in Angular to enable the creation and sharing of gift wish lists. Key features include generating shareable links via a REST API call to a custom URL shortener and AI-powered gift suggestions."
     }
   ],
   "skills": [
