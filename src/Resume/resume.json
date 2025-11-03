@@ -1,5 +1,5 @@
 {
-  "description": "I'm a 24-year-old University of Utah graduate with a BS in Computer Science and a minor in Business. My hobbies include fitness, motorcycles, photography, video production, mountain biking, basketball, and technology.",
+  "description": "I'm a 25-year-old University of Utah graduate with a BS in Computer Science and a minor in Business. My hobbies include fitness, motorcycles, photography, video production, mountain biking, baseball, basketball, and technology.",
   "education": [
     {
       "school": "University of Utah",
@@ -40,9 +40,15 @@
   ],
   "experience": [
     {
+      "name": "Software Engineer",
+      "company": "SS&C",
+      "time": "September 2024 - Present",
+      "bullets": []
+    },
+    {
       "name": "Software Developer",
       "company": "Systems Implementers, Inc.",
-      "time": "March 2023 - Present",
+      "time": "March 2023 - August 2024",
       "bullets": [
         "Collaborated with a team of 6-8 developers to enhance and maintain a large existing codebase of aircraft maintenance software, featuring an Angular frontend, a Java Spring backend, and an Oracle SQL database.",
         "Created new reports and implemented major changes and fixes to existing ones, ensuring productivity and accuracy for thousands of users across Hill Air Force Base who rely on these reports daily for critical operations.",
