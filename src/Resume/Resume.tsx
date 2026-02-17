@@ -6,7 +6,6 @@ import ResumeModel from "./models/Resume";
 
 export function Resume() {
   const resumeData = new ResumeModel(resume);
-  let [utah, setUtah] = useState(true);
 
   let [openAccordions, setOpenAccordions] = useState<string[]>([
     `${resumeData.experience[0].name}, ${resumeData.experience[0].company}`,
