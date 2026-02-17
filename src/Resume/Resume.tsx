@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 import "./Resume.css";
 import resume from "./resume.json";
@@ -6,13 +6,36 @@ import ResumeModel from "./models/Resume";
 
 export function Resume() {
   const resumeData = new ResumeModel(resume);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the resume is visible
+      },
+    );
+
+    const resumeElement = document.querySelector(".resume");
+    if (resumeElement) {
+      observer.observe(resumeElement);
+    }
+
+    return () => {
+      if (resumeElement) {
+        observer.unobserve(resumeElement);
+      }
+    };
+  }, []);
 
   let [openAccordions, setOpenAccordions] = useState<string[]>([
     `${resumeData.experience[0].name}, ${resumeData.experience[0].company}`,
   ]);
 
   const toggleAccordion = (name: string) => {
-    console.log(openAccordions);
+    // console.log(openAccordions); // Removed console log for cleaner code
     if (openAccordions.includes(name)) {
       setOpenAccordions(openAccordions.filter((n) => n !== name));
     } else {
@@ -129,10 +152,13 @@ export function Resume() {
       </div>
       <a
         href="https://aloos.li/resume"
-        title="Resume"
-        style={{ marginBottom: "10px" }}
+        title="Download PDF"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`pdfFab ${isVisible ? "visible" : ""}`}
       >
-        <BsFillFileEarmarkPdfFill color="rgb(0, 167, 167)" size={30} />
+        <BsFillFileEarmarkPdfFill size={30} />
+        <span className="pdfFabText">Download PDF</span>
       </a>
     </div>
   );
