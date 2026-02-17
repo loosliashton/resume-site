@@ -44,7 +44,13 @@ export function Resume() {
                   : "+"}
               </div>
             </div>
-            {openAccordions.includes(`${exp.name}, ${exp.company}`) && (
+            <div
+              className={`accordionContent ${
+                openAccordions.includes(`${exp.name}, ${exp.company}`)
+                  ? "open"
+                  : ""
+              }`}
+            >
               <div>
                 <p>{exp.time}</p>
                 <ul>
@@ -53,7 +59,7 @@ export function Resume() {
                   ))}
                 </ul>
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>
@@ -94,7 +100,11 @@ export function Resume() {
                 {openAccordions.includes(edu.school) ? "-" : "+"}
               </div>
             </div>
-            {openAccordions.includes(edu.school) && (
+            <div
+              className={`accordionContent ${
+                openAccordions.includes(edu.school) ? "open" : ""
+              }`}
+            >
               <div>
                 <p>{edu.time}</p>
                 <p>{edu.info}</p>
@@ -106,7 +116,7 @@ export function Resume() {
                   ))}
                 </ul>
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>

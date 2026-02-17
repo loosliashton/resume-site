@@ -7,73 +7,87 @@
 }
 
 .resume h1 {
-    font-size: 2.5em;
-    color: rgb(0, 167, 167);
-    font-family: monospace;
-    text-align: left;
-    margin-left: 10px;
-    font-style: italic;
+  font-size: 2.5em;
+  color: rgb(0, 167, 167);
+  font-family: monospace;
+  text-align: left;
+  margin-left: 10px;
+  font-style: italic;
 }
 
 .resume h2 {
-    font-size: 1.4em;
-    color: #000000;
-    text-align: left;
-    font-weight: 350;
+  font-size: 1.4em;
+  color: #000000;
+  text-align: left;
+  font-weight: 350;
 }
 
 .resume h3 {
-    font-size: 1.2em;
-    color: #000000;
-    font-family: monospace;
-    text-align: left;
-    margin-left: 10px;
+  font-size: 1.2em;
+  color: #000000;
+  font-family: monospace;
+  text-align: left;
+  margin-left: 10px;
 }
 
 p {
-    font-size: 1em;
-    color: #000000;
-    text-align: left;
-    margin-left: 10px;
+  font-size: 1em;
+  color: #000000;
+  text-align: left;
+  margin-left: 10px;
 }
 
 ul {
-    color: #000000;
+  color: #000000;
 }
 
 li {
-    font-size: 1em;
-    color: #000000;
-    text-align: left;
-    margin-left: 10px;
+  font-size: 1em;
+  color: #000000;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .expandIcon {
-    color: #000000;
-    font-size: 24px;
-    margin-left: 10px;
+  color: #000000;
+  font-size: 24px;
+  margin-left: 10px;
 }
 
 .accordionTitle {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    padding-right: 10px;
-    padding-left: 10px;
-    flex-direction: row;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-right: 10px;
+  padding-left: 10px;
+  flex-direction: row;
+  align-content: center;
 }
 
 .resume {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 @media (max-width: 600px) {
-    .resume {
-        width: 95%;
-    }
+  .resume {
+    width: 95%;
+  }
+}
+
+.accordionContent {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+}
+
+.accordionContent.open {
+  grid-template-rows: 1fr;
+}
+
+.accordionContent > div {
+  overflow: hidden;
 }
