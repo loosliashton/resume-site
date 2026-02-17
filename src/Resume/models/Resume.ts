@@ -36,7 +36,20 @@ export default class ResumeModel {
   projects: Project[];
 
   constructor(data: any) {
-    this.description = data.description;
+    const birthDate = new Date("2000-01-03");
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+
+    // Adjust age if birth date hasn't occurred yet this year
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+
+    this.description = data.description.replace("{age}", age.toString());
     this.education = data.education;
     this.experience = data.experience;
     this.skills = data.skills;
