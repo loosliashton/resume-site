@@ -39,9 +39,13 @@ export function Resume() {
                 <b>{exp.name}</b> / {exp.company}
               </h2>
               <div className="expandIcon">
-                {openAccordions.includes(`${exp.name}, ${exp.company}`)
-                  ? "-"
-                  : "+"}
+                <div
+                  className={`plus-minus ${
+                    openAccordions.includes(`${exp.name}, ${exp.company}`)
+                      ? "open"
+                      : ""
+                  }`}
+                />
               </div>
             </div>
             <div
@@ -97,7 +101,11 @@ export function Resume() {
                 <b>{edu.degree}</b> / {edu.school}
               </h2>
               <div className="expandIcon">
-                {openAccordions.includes(edu.school) ? "-" : "+"}
+                <div
+                  className={`plus-minus ${
+                    openAccordions.includes(edu.school) ? "open" : ""
+                  }`}
+                />
               </div>
             </div>
             <div
