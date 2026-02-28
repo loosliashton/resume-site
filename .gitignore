@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+resume.aux
+resume.fdb_latexmk
+resume.fls
+resume.log
+resume.out
+resume.synctex.gz

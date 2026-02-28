@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{
+    \resumeItem{\textbf{#1}: #2}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://aloos.li/}{\Large Ashton Loosli}} & \href{mailto:loosliashton@gmail.com}{loosliashton@gmail.com}\\
+  \href{https://aloos.li/}{aloos.li} & 385-389-7193 \\
+  &\href{https://linkedin.com/in/ashtonloosli}{linkedin.com/in/ashtonloosli}
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SS\&C Technologies}{Boston, MA}
+      {Software Engineer}{September 2024 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {Collaborated in an Agile team environment to engineer trade management features for a mission-critical OMS supporting \$3T+ in Assets Under Management and facilitating execution for 2,500+ global clients.}
+        \resumeItem
+          {Designed and implemented an entirely new feature to allow users to automate customizable fields in my first month, including designing database structure, building UI, and tightly integrating with existing core functionality.}
+        \resumeItem
+          {Completed an urgent bug fix that affected over \$700,000 in annual recurring revenue for a top customer. Identified the issue, implemented a solution, and released a hotfix within 3 days, despite relying only on SQL traces for data.}
+        \resumeItem
+          {Reduced trade finalization time by 25\% by identifying and implementing a solution to skip evaluation of filter parameters under qualifying conditions.}
+        \resumeItem
+          {Led the charge on several modernization initiatives, including performance improvement via multithreading, migrating from client-side SQL execution to service-based APIs, and transitioning to 64-bit.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Systems Implementers, Inc}{Clearfield, UT}
+      {Software Developer}{March 2023 - August 2024}
+      \resumeItemListStart
+        \resumeItem
+          {Collaborated with a team of 6-8 developers to enhance and maintain a large existing codebase of aircraft maintenance software, featuring an Angular frontend, a Java Spring backend, and an Oracle SQL database.}
+        \resumeItem
+          {Created new reports and implemented major changes and fixes to existing ones, ensuring productivity and accuracy for thousands of users across Hill Air Force Base who rely on these reports daily for critical operations.}
+        \resumeItem
+          {Led the ongoing conversion of 100+ pages from JSF to Angular frameworks, resulting in a 50\% improvement in load times, enhanced user experience, and a significant decrease in development time for bug fixes and enhancements.}
+
+        \resumeItem
+          {Performed manual updates and modifications to database tables to correct issues, implement changes, and ensure data integrity; performed query optimization and table indexing to improve performance by up to 200\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fidelity Investments}{Salt Lake City, UT}
+      {Software Developer Intern}{Summer 2021 \& 2022}
+      \resumeItemListStart
+        \resumeItem
+          {Improved team workflow by decreasing build time by 20\%, eliminating verbose logging data, and re-configuring the linter to promote TypeScript best practices.}
+        \resumeItem
+          {Worked comprehensively with TypeScript and implemented changes regarding Datadog logging and tracing, ESLint warnings and errors, and Jenkins build configurations.}
+        \resumeItem
+          {Practiced Agile software development in a team environment, including daily standup meetings, extensive use of Git version control, and task management within sprints.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Fast Break}
+      {Developed a React Native mobile applications in a team of four to facilitate pickup basketball. Features multi-provider authentication, location-based notifications, Firebase NoSQL back-end, peer-to-peer messaging, and cross-platform compatibility.}
+    \resumeSubItem{Trade Flow Dashboard}
+      {Worked with a team of five developers to create an internal dashboard for Fidelity Investments. Developed in Angular and deployed via a Docker container on AWS, this dashboard provides a way for brokers to track where in the pipeline any trade is.}
+    \resumeSubItem{\href{https://swishlist.cc}{Swishlist}}
+      {Built a web app in Angular to enable the creation and sharing of gift wish lists. Key features include generating shareable links via a REST API call to a custom URL shortener and AI-powered gift suggestions.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+\vspace{-15pt}
+\begin{multicols}{2}
+    \begin{samepage}
+     \textbf{Languages}{: Java, JavaScript, TypeScript, C\#, C, C++, HTML, CSS, SQL, Python, Kotlin, Go. }\par
+  \end{samepage}
+  \begin{samepage}
+     \textbf{Technologies}{: Git, AWS, Azure, Google Cloud, Firebase, Jira, Docker, Kubernetes, MongoDB.}\par
+  \end{samepage}
+  \begin{samepage}
+     \textbf{Frameworks}{: React, React Native, Angular, Vue.js, .NET, Spring.}\par
+  \end{samepage}
+  \begin{samepage}
+     \textbf{Certifications}{: Agile Scrum Master (Scrum Alliance).}\par
+  \end{samepage}
+  \begin{samepage}
+     \textbf{Operating Systems}{: Windows, macOS, Linux.}\par
+  \end{samepage}
+ \end{multicols}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Science in Computer Science}{University of Utah}
+      {Business Minor; Honors Certificate; 3.7 GPA}{August 2018 -- May 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
