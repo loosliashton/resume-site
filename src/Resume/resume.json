@@ -41,9 +41,15 @@
   "experience": [
     {
       "name": "Software Engineer",
-      "company": "SS&C",
+      "company": "SS&C Technologies",
       "time": "September 2024 - Present",
-      "bullets": []
+      "bullets": [
+        "Collaborated in an Agile team environment to engineer trade management features for a mission-critical OMS supporting $3T+ in Assets Under Management and facilitating execution for 2,500+ global clients.",
+        "Designed and implemented an entirely new feature to allow users to automate customizable fields in my first month, including designing database structure, building UI, and tightly integrating with existing core functionality.",
+        "Completed an urgent bug fix that affected over $700,000 in annual recurring revenue for a top customer. Identified the issue, implemented a solution, and released a hotfix within 3 days, despite relying only on SQL traces for data.",
+        "Reduced trade finalization time by 25% by identifying and implementing a solution to skip evaluation of filter parameters under qualifying conditions.",
+        "Led the charge on several modernization initiatives, including performance improvement via multithreading, migrating from client-side SQL execution to service-based APIs, and transitioning to 64-bit."
+      ]
     },
     {
       "name": "Software Developer",
@@ -89,7 +95,7 @@
       "description": "Worked with a team of five developers to create an internal dashboard for Fidelity Investments. Developed in Angular and deployed via a Docker container on AWS, this dashboard provides a way for brokers to track where in the pipeline any trade is."
     },
     {
-      "name": "Gift Lists",
+      "name": "Swishlist",
       "description": "Built a web app in Angular to enable the creation and sharing of gift wish lists. Key features include generating shareable links via a REST API call to a custom URL shortener and AI-powered gift suggestions."
     }
   ],
